@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Dinero Setup</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <div class="card">
+    <div class="container">
+      <div class="brand-row">
+        <div class="logo">💸</div>
+        <div>
+          <h1>Dinero</h1>
+          <p class="subtitle">Pause before impulse spending</p>
+        </div>
+      </div>
+
+      <form id="onboarding-form">
+        <label>
+          Monthly budget
+          <input type="number" id="budget" placeholder="e.g. 800" required />
+        </label>
+
+        <label>
+          Main spending category
+          <select id="category" required>
+            <option value="">Select one</option>
+            <option value="clothing">Clothing</option>
+            <option value="beauty">Beauty</option>
+            <option value="food">Food</option>
+            <option value="tech">Tech</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+
+        <label>
+          Savings goal
+          <input type="text" id="goal" placeholder="e.g. trip to Miami" required />
+        </label>
+
+        <label>
+          Favorite small treat
+          <input type="text" id="treat" placeholder="e.g. iced coffee" required />
+        </label>
+
+        <label>
+          Biggest impulse trigger
+          <select id="trigger" required>
+            <option value="">Select one</option>
+            <option value="late-night">Late-night shopping</option>
+            <option value="stress">Stress</option>
+            <option value="boredom">Boredom</option>
+            <option value="social-media">Social media</option>
+          </select>
+        </label>
+
+        <button type="submit">Save preferences</button>
+      </form>
+
+      <p id="status"></p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
