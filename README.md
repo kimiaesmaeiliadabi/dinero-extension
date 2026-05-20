@@ -1,1 +1,1 @@
-# diner-extension
+# dinero-extension
